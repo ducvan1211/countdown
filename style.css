@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&display=swap");
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Corinthia", cursive;
+  background-image: url("happy_new_year.jpg");
+  background-size: cover;
+  /* object-fit: cover; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.container {
+  text-align: center;
+}
+.logo img {
+  width: 90px;
+}
+h1 {
+  font-size: 80px;
+  transform: translate(0, -60px);
+  font-weight: bold;
+}
+.time .item {
+  position: relative;
+  /* background-image: repeating-linear-gradient(
+    to right bottom,
+    #7a7a7a 0px,
+    #7a7a7a 1px,
+    transparent 1px,
+    transparent 8px
+  ); */
+}
+.time {
+  transform: translate(0, -60px);
+
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  column-gap: 20px;
+  grid-template-rows: 200px;
+  font-size: 50px;
+}
+#day,
+#hour,
+#minute,
+#second {
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 130px;
+}
+span {
+  line-height: 60px;
+}
+/* .time .item::after,
+.time .item::before {
+  position: absolute;
+  width: 6px;
+  height: 20px;
+  background-color: #000;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.time .item::after {
+  left: unset;
+  right: 0;
+} */
